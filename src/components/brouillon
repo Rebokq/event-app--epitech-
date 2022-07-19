@@ -1,0 +1,97 @@
+
+import React from 'react'
+
+import Image from "../assets/bar.jpg";
+import thumb from "../assets/bar.jpg";
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { VscChecklist } from "react-icons/vsc";
+import { FaPlay } from "react-icons/fa";
+
+import {FaAngellist} from "react-icons/fa"
+import {FaTicketAlt} from "react-icons/fa"
+
+import { MoonIcon } from "@heroicons/react/solid";
+import { SunIcon } from "@heroicons/react/solid";
+
+
+
+const EventDescr = (toggle, settoggle) => {
+  return (
+    <div className=''>
+    <div className=" p-4 bg-white dark:bg-slate-800 shadow-lg dark:shadow-slate-700 flex flex-col ease-linear duration-300 md:flex-row-reverse">
+        <div className=" h-full w-full  shadow-md rounded-2xl basis-2/3 relative">
+            <div className=" text-white z-10 bg-[#5865F2] absolute pl-8 pr-8 pb-2 pt-2  rounded-tl-2xl rounded-br-2xl font-semibold">
+                <h1>FREE</h1>
+            </div>
+            <div className="h-full w-full relative border-2 border-white rounded-2xl">
+                <img
+                src={thumb}
+                alt="thumbnail"
+                layout="fill"
+                objectFit="cover"
+                className=" rounded-2xl"
+                />
+            </div>
+        </div>
+
+        <div className=" h-full w-full mr-2 rounded-2xl ">
+            <div>
+            <p className="m-2 font-bold pl-1 text-lg text-[#5865F2]">Advanced</p>
+            <h1 className="m-2 text-4xl font-bold dark:text-white uppercase">
+                coachella
+            </h1>
+
+                <div className=" pt-16 pr-2 pl-2 flex flex-row justify-around flex-wrap">
+                
+                <div className="flex flex-row items-center m-2">
+                <AiOutlineClockCircle size={20} className="dark:text-white" />
+                <h1 className="pl-1 dark:text-white">17 Juillet</h1>
+                </div>
+                <div className="flex flex-row items-center m-2">
+                <VscChecklist size={20} className="dark:text-white" />
+                <h1 className="pl-1 dark:text-white">Participants</h1>
+                </div>
+            </div>
+
+            <div className="flex flex-row">
+                <button className="md:m-2 m-auto mt-8 bg-[#5865F2] shadow-md shadow-[#5865f28a]  pt-2 pb-2 pl-6 pr-4 rounded-xl flex flex-row justify-center items-center hover:bg-[#424bb6] ease-linear duration-300">
+                <FaAngellist className="animate-ping" size={15} color="#fff" />
+                <h1 className="text-white text-md font-semibold pl-2">
+                    Interested
+                </h1>
+                </button>
+                <button className="md:m-2 m-auto mt-8 bg-[#5865F2] shadow-md shadow-[#5865f28a]  pt-2 pb-2 pl-6 pr-4 rounded-xl flex flex-row justify-center items-center hover:bg-[#424bb6] ease-linear duration-300">
+                <FaTicketAlt className="" size={15} color="#fff" />
+                <h1 className="text-white text-md font-semibold pl-2">
+                    Book Now 25 €
+                </h1>
+                </button>
+                
+            </div>
+            </div>
+
+            <h3 className='bold text-2xl mt-5'>Description</h3>
+            <div className='flex'>
+                
+                <p><br />Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+    <br></br>
+            
+        </div>
+        
+
+    </div>
+    </div>
+    
+  )
+}
+
+export default EventDescr
+
+
+
